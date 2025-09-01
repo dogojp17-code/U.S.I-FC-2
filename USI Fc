@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soccer Team Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background: #1e3d7b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #142850;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+    nav a:hover {
+      background: #27496d;
+    }
+    .container {
+      padding: 20px;
+    }
+    .team-roster, .schedule, .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card, .photo {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .photo img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .live-scores {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #1e3d7b;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>⚽ Dream FC</h1>
+    <p>Official Soccer Team Website</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#team">Team</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#scores">Live Scores</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container" id="home">
+    <h2>Welcome to Dream FC</h2>
+    <p>We are passionate about soccer and dedicated to teamwork, growth, and winning together.</p>
+  </div>
+
+  <div class="container" id="about">
+    <h2>About Us</h2>
+    <p>Dream FC was founded in 2025 with the goal of bringing players together and competing at the highest level. Our coaches and staff are committed to building strong athletes on and off the field.</p>
+  </div>
+
+  <div class="container" id="team">
+    <h2>Team Roster</h2>
+    <div class="team-roster">
+      <div class="card">
+        <h3>Player 1</h3>
+        <p>Forward</p>
+      </div>
+      <div class="card">
+        <h3>Player 2</h3>
+        <p>Midfielder</p>
+      </div>
+      <div class="card">
+        <h3>Player 3</h3>
+        <p>Defender</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="schedule">
+    <h2>Match Schedule</h2>
+    <div class="schedule">
+      <div class="card">
+        <h3>Sept 10, 2025</h3>
+        <p>Dream FC vs Rival United</p>
+      </div>
+      <div class="card">
+        <h3>Sept 17, 2025</h3>
+        <p>Dream FC vs City Stars</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <div class="photo"><img src="photo1.jpg" alt="Match photo 1"></div>
+      <div class="photo"><img src="photo2.jpg" alt="Match photo 2"></div>
+      <div class="photo"><img src="photo3.jpg" alt="Match photo 3"></div>
+    </div>
+  </div>
+
+  <div class="container" id="scores">
+    <h2>Live Scores</h2>
+    <div class="live-scores">
+      <p><strong>Dream FC</strong> 2 - 1 Rival United (70')</p>
+      <p><strong>Next Match:</strong> Sept 17, 2025 vs City Stars</p>
+    </div>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@dreamfc.com</p>
+    <p>Phone: (123) 456-7890</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Dream FC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
